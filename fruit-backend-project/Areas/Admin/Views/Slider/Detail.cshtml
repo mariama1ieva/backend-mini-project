@@ -1,0 +1,18 @@
+﻿@model SliderDetailVM
+
+<div class="container">
+    <div class="card mt-4 w-100" style="display:flex;align-items:center;">
+        <h3 class="card-header">Detail</h3>
+        <div>
+            <form asp-action="Detail" method="post">
+
+                <img style="width:150px;height:100px;" class="form-control" multiple src="~/img/@Model.Image" />
+                <h5>@Model.Name<h5/>
+                <a asp-action="Index" asp-controller="Slider" class="btn btn-info mt-5">Back</a>
+            </form>
+
+
+        </div>
+    </div>
+
+</div>

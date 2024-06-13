@@ -1,12 +1,122 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|c:\\users\\asus\\onedrive\\desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|solutionrelative:fruit-backend-project\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|c:\\users\\asus\\onedrive\\desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\areas\\viewmodels\\products\\productvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|solutionrelative:fruit-backend-project\\areas\\viewmodels\\products\\productvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|c:\\users\\asus\\onedrive\\desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|solutionrelative:fruit-backend-project\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|c:\\users\\asus\\onedrive\\desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|solutionrelative:fruit-backend-project\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|c:\\users\\asus\\onedrive\\desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|solutionrelative:fruit-backend-project\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|c:\\users\\asus\\onedrive\\desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|solutionrelative:fruit-backend-project\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductVM.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\ViewModels\\Products\\ProductVM.cs",
+              "RelativeDocumentMoniker": "fruit-backend-project\\Areas\\ViewModels\\Products\\ProductVM.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\ViewModels\\Products\\ProductVM.cs",
+              "RelativeToolTip": "fruit-backend-project\\Areas\\ViewModels\\Products\\ProductVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:07:11.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "fruit-backend-project\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "fruit-backend-project\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T13:41:11.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "fruit-backend-project\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "fruit-backend-project\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T06:00:51.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "fruit-backend-project\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Services\\ProductService.cs",
+              "RelativeToolTip": "fruit-backend-project\\Services\\ProductService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:04:02.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "fruit-backend-project\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "fruit-backend-project\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T13:57:22.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SliderController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeDocumentMoniker": "fruit-backend-project\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeToolTip": "fruit-backend-project\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T13:56:31.516Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

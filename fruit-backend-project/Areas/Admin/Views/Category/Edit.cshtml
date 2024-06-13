@@ -1,0 +1,21 @@
+﻿@model CategoryEditVM
+
+<div class="container">
+    <div class="card mt-4 w-100" style="display:flex;align-items:center;">
+        <div>
+            <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+
+                <label asp-for=Name class="form-label">Name</label>
+                <input asp-for=Name type="text" class="form-control" placeholder="add..." maxlength="120">
+
+                
+
+                <button type="submit" class="btn btn-success mt-5">Submit</button>
+                <a asp-action="Index" asp-controller="Category" class="btn btn-info mt-5">Cancel</a>
+            </form>
+        </div>
+    </div>
+
+</div>

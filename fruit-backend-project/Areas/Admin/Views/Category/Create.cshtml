@@ -1,0 +1,19 @@
+﻿@model CategoryCreatVM
+
+<h1>Create</h1>
+<div class="container mt-5">
+    <h3 class="text-center text-dark">Create New Category</h3>
+    <form class="forms-sample" method="post" asp-action="Create" asp-area="Admin" enctype="multipart/form-data" style="margin-left:200px;">
+        <div class="form-group">
+
+            <label>Name</label>
+            <input asp-for="Name" class="form-control text-black" maxlength="50">
+            <span class="text-danger" asp-validation-for="Name"></span>
+
+        </div>
+
+
+        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+        <a asp-action="Index" class="btn btn-primary text-white">Back</a>
+    </form>
+</div> 

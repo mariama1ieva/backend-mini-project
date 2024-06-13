@@ -1,0 +1,46 @@
+﻿@using fruit_backend_project.Models
+@model Product
+@* 
+@section css{
+    <link rel="stylesheet" href="~/product/Product.css">
+} *@
+<div class="container " style="margin-top:200px;">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="project-info-box mt-0">
+                <p><b>Product name:</b> @Model.Name</p>
+
+                <p><b>Product description:</b> @Model.Description</p>
+            </div><!-- / project-info-box -->
+
+            <div class="project-info-box">
+                <p><b>Category name:</b> @Model.Category.Name</p>
+                <p><b>Price:</b> @Model.Price</p>
+                <div class="project-info-box">
+                    <p><b>Weight:</b> @Model.Weight</p>
+                    <p><b>Min Weight:</b> @Model.MinWeight</p>
+                    <p><b>Origin:</b> @Model.Origin</p>
+                    <p><b>Quality:</b> @Model.Quality</p>
+                    <p><b>Check:</b> @Model.Сheck</p>
+
+                </div>
+              
+            </div><!-- / project-info-box -->
+
+       
+        </div><!-- / column -->
+
+        <div class="col-md-7 col-6">
+
+            @foreach (var item in Model.ProductImages)
+            {
+                <img src="~/img/@item.Image" alt="project-image" class="rounded" style="height:200px;width:200px">
+
+            }
+            <a class="btn btn-primary d-block" style="width:100px; margin-top:100px;" asp-controller="Home" asp-action="Index">Back</a>
+
+        </div><!-- / column -->
+
+    </div>
+
+</div>

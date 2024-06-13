@@ -1,0 +1,35 @@
+﻿@model List<SliderVM>
+
+
+<div class="container ">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Operations</th>
+
+            </tr>
+        </thead>
+        <a style="margin-left:200px;margin-top:10px;" class="btn btn-success" asp-area="Admin" asp-controller="Slider" asp-action="Create">Create Slider</a>
+
+           @foreach (var item in Model)
+            {
+        <tbody>
+                <tr>
+                    <td><img src="~/img/@item.Image" style="width:200px;height:200px;margin-left:200px;" /></td>
+                    <td>@item.Name</td>
+                    <td>
+                        <a class="btn btn-info" asp-area="Admin" asp-controller="Slider" asp-route-id =@item.Id asp-action="Detail">Detail</a>
+                        <a class="btn btn-warning" asp-area="Admin" asp-controller="Slider" asp-route-id=@item.Id asp-action="Edit">Edit</a>
+                        <form method="post" asp-area="Admin" asp-controller="Slider" asp-route-id="@item.Id" asp-action="Delete" style="display:inline-block">
+                            <button class="btn btn-danger d-inline-block">Delete</button>
+
+                        </form>
+                    </td>
+                </tr>
+
+        </tbody>
+            }
+    </table>
+</div>
