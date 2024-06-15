@@ -2,6 +2,7 @@
 using fruit_backend_project.Data;
 using fruit_backend_project.Models;
 using fruit_backend_project.Services.Interface;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace fruit_backend_project.Services
@@ -18,6 +19,12 @@ namespace fruit_backend_project.Services
         {
             List<Category> categories = await _context.Categories.OrderByDescending(m => m.Id).ToListAsync();
             return categories.Select(m => new CategoryVM { Id = m.Id, Name = m.Name }).ToList();
+        }
+
+        public async Task<SelectList> GetALlBySelectedAsync()
+        {
+            var datas = await _context.Categories.ToListAsync();
+            return new SelectList(datas, "Id", "Name");
         }
     }
 }

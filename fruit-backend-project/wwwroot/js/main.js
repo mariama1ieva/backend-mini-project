@@ -1,5 +1,25 @@
 (function ($) {
-    "use strict";
+    "use strict"
+
+    $(document).on('click', '.category', function (e) {
+        $(this).addClass('active').siblings().removeClass('active');
+        e.preventDefault();
+        const category = $(this).attr('category-id');
+        const products = $('.fruite-item');
+
+        products.each(function () {
+            if (category === $(this).attr('category-id')) {
+                $(this).parent().fadeIn();
+            }
+            else {
+                $(this).parent().hide();
+            }
+        })
+
+        if (category == 'All') {
+            products.parent().fadeIn();
+        }
+    })
 
     // Spinner
     var spinner = function () {
@@ -148,4 +168,3 @@
     });
 
 })(jQuery);
-

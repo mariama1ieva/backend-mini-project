@@ -12,7 +12,7 @@ namespace fruit_backend_project.Controllers
         {
             _productService = productService;
         }
-        public async Task<IActionResult> Index(int? id)
+        public async Task<IActionResult> Detail(int? id)
         {
             if (id == null)
             {

@@ -26,6 +26,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ISettingService, SettingService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
 
 
 

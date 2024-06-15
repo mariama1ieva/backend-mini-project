@@ -6,5 +6,6 @@ namespace fruit_backend_project.Services.Interface
     {
         Task<List<Product>> GetAllAsync();
         Task<Product> GetByIdAsync(int id);
+        Task CreateAsync(Product product);
     }
 }

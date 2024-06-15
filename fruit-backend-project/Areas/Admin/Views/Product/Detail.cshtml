@@ -1,0 +1,42 @@
+﻿@model ProductDetailVM
+
+<div class="container">
+    <div class="card mt-4 w-100" style="display:flex;align-items:center;">
+        <h5 class="card-header">Product Detail</h5
+        >
+        <div>
+            <form asp-action="Detail" >
+
+              <div class="detail d-flex" style=" gap:100px;">
+                    <div>
+                        @foreach (var item in Model.Images)
+                        {
+                            <img style="width:250px;height:150px;" class="form-control mt-5" src="~/img/@item.Image" />
+                        }
+                    </div>
+
+                    <div style="margin-top:50px;">
+
+                        <p>  Name: @Model.Name<p />
+                        <p>  Category:@Model.Category<p />
+                        <p>   Price:@Model.Price<p />
+                        <p>  Check:@Model.Check<p />
+                        <p>  Description: @Model.Description<p />
+                        <p>  Min weight: @Model.MinWeight<p />
+                        <p>  Weight: @Model.Weight<p />
+                        <p>  Origin: @Model.Origin<p />
+                        <p>  Quality: @Model.Quality<p />
+                    </div>
+              </div>
+
+
+
+
+                    <a asp-action="Index" asp-controller="Product" class="btn btn-info mt-5">Back</a>
+            </form>
+
+
+        </div>
+    </div>
+
+</div>

@@ -45,6 +45,22 @@
       "PackagePath": "staticwebassets\\assets\\images\\1b9f9199-e528-452c-91cc-ab3332f60150-banner-2.png"
     },
     {
+      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\assets\\images\\27ea0cf4-513d-4444-a2dd-4dc25494d120-banner-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\27ea0cf4-513d-4444-a2dd-4dc25494d120-banner-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\assets\\images\\51d692de-e601-4fc0-a92b-f9d25b390ce7-banner-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\51d692de-e601-4fc0-a92b-f9d25b390ce7-banner-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\assets\\images\\60fe6e3a-b59c-4fec-b264-3352c24a4127-banner-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\60fe6e3a-b59c-4fec-b264-3352c24a4127-banner-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\assets\\images\\74d1cce4-6f88-4e53-bb24-aaa08503e1ae-banner-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\74d1cce4-6f88-4e53-bb24-aaa08503e1ae-banner-1.png"
+    },
+    {
       "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\assets\\images\\a4ce4e11-57c7-4ea8-9e1e-ff58b910ef6c-img1.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\a4ce4e11-57c7-4ea8-9e1e-ff58b910ef6c-img1.jpg"
     },
@@ -2597,12 +2613,40 @@
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\55dacd37-84f7-4c94-ad08-f1477405598a-banner-1.png",
-      "PackagePath": "staticwebassets\\img\\55dacd37-84f7-4c94-ad08-f1477405598a-banner-1.png"
+      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\2634783b-cb10-450c-9b17-f8215b6d4843-banner-2.png",
+      "PackagePath": "staticwebassets\\img\\2634783b-cb10-450c-9b17-f8215b6d4843-banner-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\2f9d750f-7e25-4426-94ad-69bae7f4743c-author-1.png",
+      "PackagePath": "staticwebassets\\img\\2f9d750f-7e25-4426-94ad-69bae7f4743c-author-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\3622b02f-beb2-4dff-ab40-cf7b7ee2ab06-banner-1.png",
+      "PackagePath": "staticwebassets\\img\\3622b02f-beb2-4dff-ab40-cf7b7ee2ab06-banner-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\52bee496-8fe1-455e-8ee4-4b910f845077-banner-1.png",
+      "PackagePath": "staticwebassets\\img\\52bee496-8fe1-455e-8ee4-4b910f845077-banner-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\7a46679c-da0b-485a-b235-1d1fc1eb400a-banner-1.png",
+      "PackagePath": "staticwebassets\\img\\7a46679c-da0b-485a-b235-1d1fc1eb400a-banner-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\7aa69761-6c3b-4b96-9364-ce538b88096a-banner-1.png",
+      "PackagePath": "staticwebassets\\img\\7aa69761-6c3b-4b96-9364-ce538b88096a-banner-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\82a6e3d0-f352-4c57-a74a-c79ab8a7c81a-banner-2.png",
+      "PackagePath": "staticwebassets\\img\\82a6e3d0-f352-4c57-a74a-c79ab8a7c81a-banner-2.png"
     },
     {
       "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\avatar.jpg",
       "PackagePath": "staticwebassets\\img\\avatar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\b7c20798-ac87-425f-ab99-b35061aad26d-banner-1.png",
+      "PackagePath": "staticwebassets\\img\\b7c20798-ac87-425f-ab99-b35061aad26d-banner-1.png"
     },
     {
       "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\baner-1.png",
@@ -2637,8 +2681,20 @@
       "PackagePath": "staticwebassets\\img\\best-product-6.jpg"
     },
     {
+      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\c354c77a-d6eb-4aa9-a0a9-f7fe6cafbba2-banner-2.png",
+      "PackagePath": "staticwebassets\\img\\c354c77a-d6eb-4aa9-a0a9-f7fe6cafbba2-banner-2.png"
+    },
+    {
       "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\cart-page-header-img.jpg",
       "PackagePath": "staticwebassets\\img\\cart-page-header-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\f3743068-f098-4e92-a043-93f79979d56d-author-1.png",
+      "PackagePath": "staticwebassets\\img\\f3743068-f098-4e92-a043-93f79979d56d-author-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\f5010bd5-5d4f-4e88-945d-c85133995ada-banner-1.png",
+      "PackagePath": "staticwebassets\\img\\f5010bd5-5d4f-4e88-945d-c85133995ada-banner-1.png"
     },
     {
       "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\featur-1.jpg",
@@ -2653,10 +2709,6 @@
       "PackagePath": "staticwebassets\\img\\featur-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\fruite-item-1.jpg",
-      "PackagePath": "staticwebassets\\img\\fruite-item-1.jpg"
-    },
-    {
       "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\fruite-item-2.jpg",
       "PackagePath": "staticwebassets\\img\\fruite-item-2.jpg"
     },
@@ -2667,10 +2719,6 @@
     {
       "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\fruite-item-4.jpg",
       "PackagePath": "staticwebassets\\img\\fruite-item-4.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\fruite-item-5.jpg",
-      "PackagePath": "staticwebassets\\img\\fruite-item-5.jpg"
     },
     {
       "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\fruite-item-6.jpg",

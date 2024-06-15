@@ -12,9 +12,16 @@ namespace fruit_backend_project.Services
         {
             _context = context;
         }
+
+        public async Task CreateAsync(Product product)
+        {
+            await _context.Products.AddAsync(product);
+            await _context.SaveChangesAsync();
+        }
+
         public async Task<List<Product>> GetAllAsync()
         {
-            return await _context.Products.Include(m => m.Category).Include(m => m.ProductImages).ToListAsync();
+            return await _context.Products.Include(m => m.Category).Include(m => m.ProductImages).OrderByDescending(m => m.Id).ToListAsync();
         }
         public async Task<Product> GetByIdAsync(int id)
         {
