@@ -23,13 +23,24 @@ namespace fruit_backend_project.Areas.Admin.Controllers
             _webHostEnvironment = webHostEnvironment;
             _categoryService = categoryService;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
+            var dbProduct = await _service.GetAllPaginateAsync(page);
 
-            List<Product> products = await _service.GetAllAsync();
-            List<ProductVM> model = products.Select(m => new ProductVM { Id = m.Id, Name = m.Name, Image = m.ProductImages.FirstOrDefault(m => m.IsMain)?.Image, MinWeight = m.MinWeight, Weight = m.Weight, Price = m.Price, Origin = m.Origin, Check = m.Сheck, Quality = m.Quality, Description = m.Description, Category = m.Category.Name }).ToList();
+            List<ProductVM> mappedDatas = _service.GetMappedDatas(dbProduct);
+
+            int pageCount = await GetPageCountAsync(4);
+
+            Paginate<ProductVM> model = new(mappedDatas, pageCount, page);
+
             return View(model);
 
+
+        }
+        private async Task<int> GetPageCountAsync(int take)
+        {
+            int count = await _service.GetCountAsync();
+            return (int)Math.Ceiling((decimal)count / take);
         }
 
         [HttpGet]

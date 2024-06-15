@@ -1,4 +1,4 @@
-﻿@model List<ProductVM>
+﻿    @model Paginate<ProductVM>
 
 
 <div class="container ">
@@ -16,7 +16,7 @@
         </thead>
         <a style="margin-left:200px;margin-top:10px;" class="btn btn-success" asp-area="Admin" asp-controller="Product" asp-action="Create">Create Product</a>
 
-        @foreach (var item in Model)
+        @foreach (var item in Model.Datas)
         {
             <tbody>
                 <tr>
@@ -33,6 +33,7 @@
                         <form method="post" asp-area="Admin" asp-controller="Product" asp-route-id="@item.Id" asp-action="Delete" style="display:inline-block">
                             <button class="btn btn-danger d-inline-block">Delete</button>
 
+
                         </form>
                     </td>
                 </tr>
@@ -40,4 +41,27 @@
             </tbody>
         }
     </table>
+</div>
+<div class="paginate-area container">
+    <nav aria-label="...">
+        <ul class="pagination" style="margin-left:200px;">
+
+            <li class="page-item @(Model.HasPrevious ? " " : "disabled") ">
+                <a class="page-link" asp-action="Index" asp-route-page="@(Model.CurrentPage - 1)">Previous</a>
+            </li>
+
+
+            @for (int i = 1; i <= Model.TotalPage; i++)
+            {
+                <li class="page-item @(Model.CurrentPage == i ? "disabled" :""  ) "><a class="page-link@(Model.CurrentPage == i ? "active" :""  )" asp-action="Index" asp-route-page="@i">@i</a></li>
+
+            }
+
+
+            <li class="page-item @(Model.HasNext ? "":"disabled")  ">
+                <a class="page-link" asp-action="Index" asp-route-page="@(Model.CurrentPage + 1)">Next</a>
+            </li>
+
+        </ul>
+    </nav>
 </div>

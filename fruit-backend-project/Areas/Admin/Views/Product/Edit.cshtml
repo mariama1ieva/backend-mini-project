@@ -9,10 +9,12 @@
         <div>
             <form method="post" enctype="multipart/form-data">
 
-                @foreach (var item in Model.Images)
-                {
-                    <img style="width:250px;height:150px;" class="form-control mt-5" src="~/img/@item.Image" />
-                }
+             <div style=" d-flex">
+                    @foreach (var item in Model.Images)
+                    {
+                        <img style="width:250px;height:150px; " class="  mt-5" src="~/img/@item.Image" />
+                    }
+             </div>
 
                 <label class="mt-4">Name</label>
 
