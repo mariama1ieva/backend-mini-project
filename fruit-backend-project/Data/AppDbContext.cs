@@ -15,5 +15,12 @@ namespace fruit_backend_project.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<Review> Reviews { get; set; }
+        public DbSet<Feature> Features { get; set; }
+        public DbSet<FactContent> FactContents { get; set; }
+        public DbSet<ServiceContent> ServiceContents { get; set; }
+
+
+
+
     }
 }

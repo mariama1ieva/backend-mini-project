@@ -4,51 +4,51 @@
 
 <h1>Edit</h1>
 <div class="container">
-    <div class="card mt-4 w-100" style="display:flex;align-items:center;">
-        <h3 class="card-header">Create</h3>
-        <div>
+    <div class="card mt-4 w-100" >
+        <h3 class="card-header">Edit</h3>
+        <div style="margin-left:200px;">
             <form method="post" enctype="multipart/form-data">
 
              <div style=" d-flex">
                     @foreach (var item in Model.Images)
                     {
-                        <img style="width:250px;height:150px; " class="  mt-5" src="~/img/@item.Image" />
+                        <img style="width:100px;height:60px; " class="  mt-5" src="~/img/@item.Image" />
                     }
              </div>
 
                 <label class="mt-4">Name</label>
 
-                <input asp-for=Name type="text" class="form-control" placeholder="Product name..." maxlength="20">
+                <input asp-for=Name type="text" class="form-control" style="width:200px;" placeholder="Product name..." maxlength="20">
                 <label class="mt-4">Check</label>
 
-                <input asp-for=Check type="text" class="form-control"  placeholder="Product Check..." maxlength="20">
+                <input asp-for=Check type="text" class="form-control" style="width:200px;" placeholder="Product Check..." maxlength="20">
                 <label class="mt-4">Weight</label>
 
-                <input asp-for=Weight type="text" class="form-control"  placeholder="Product Weight..." maxlength="20">
+                <input asp-for=Weight type="text" class="form-control" style="width:200px;" placeholder="Product Weight..." maxlength="20">
 
                 <label class="mt-4">Quality</label>
 
-                <input asp-for=Quality type="text" class="form-control" placeholder="Quality..." maxlength="20">
+                <input asp-for=Quality type="text" class="form-control" style="width:200px;" placeholder="Quality..." maxlength="20">
 
                 <label class="mt-4">MinWeight</label>
 
-                <input asp-for=MinWeight type="text" class="form-control"  placeholder="Product MinWeight..." maxlength="20">
+                <input asp-for=MinWeight type="text" class="form-control" style="width:200px;" placeholder="Product MinWeight..." maxlength="20">
                 <label class="mt-4">Origin</label>
 
-                <input asp-for=Origin type="text" class="form-control"  placeholder="Product Origin..." maxlength="20">
+                <input asp-for=Origin type="text" class="form-control" style="width:200px;" placeholder="Product Origin..." maxlength="20">
                 <label class="mt-4">Description</label>
 
-                <input asp-for=Description type="text" class="form-control" placeholder="Product description..." maxlength="120">
+                <input asp-for=Description type="text" class="form-control" style="width:200px;" placeholder="Product description..." maxlength="120">
                 <label class="mt-4">Price</label>
 
-                <input asp-for=Price type="text" class="form-control" placeholder="Product price..." maxlength="120">
+                <input asp-for=Price type="text" class="form-control" style="width:200px;" placeholder="Product price..." maxlength="120">
                 <label class="mt-4">Category</label>
 
-                <select class="form-control text-black" asp-for="CategoryId" asp-items="@ViewBag.Categories">
+                <select class="form-control text-black" asp-for="CategoryId" style="width:200px;" asp-items="@ViewBag.Categories">
                 </select>
 
                 <label class="mt-4">Photos</label>
-                <input asp-for="Photos" class="form-control">
+                <input asp-for="Photos" class="form-control" style="width:200px;">
 
                 <button type="submit" class="btn btn-success mt-5">Submit</button>
                 <a asp-action="Index" asp-controller="Product" class="btn btn-info mt-5">Cancel</a>

@@ -24,14 +24,19 @@ namespace fruit_backend_project.Controllers
             SliderInfo sliderInfo = await _context.SliderInfos.FirstOrDefaultAsync();
             List<Category> categories = await _context.Categories.Include(m => m.Products).Where(m => !m.SoftDelete).ToListAsync();
             List<Product> products = await productService.GetAllAsync();
-
+            List<Feature> features = await _context.Features.ToListAsync();
+            List<ServiceContent> serviceContents = await _context.ServiceContents.ToListAsync();
+            List<FactContent> factContents = await _context.FactContents.ToListAsync();
 
             HomeVM model = new()
             {
                 Sliders = sliders,
                 SliderInfo = sliderInfo,
                 Categories = categories,
-                Products = products
+                Products = products,
+                Features = features,
+                ServiceContents = serviceContents,
+                FactContents = factContents
             };
 
             return View(model);

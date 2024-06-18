@@ -24,5 +24,18 @@
             if (File.Exists(Path.Combine(path, image)))
                 File.Delete(Path.Combine(path, image));
         }
+        public static async void DeleteFile(this string fileName, string root, params string[] folders)
+        {
+            string path = root;
+            for (int i = 0; i < folders.Length; i++)
+            {
+                path = Path.Combine(path, folders[i]);
+            }
+            path = Path.Combine(path, fileName);
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+            }
+        }
     }
 }
