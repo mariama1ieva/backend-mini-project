@@ -14,5 +14,7 @@
         public string Quality { get; set; }
         public string Check { get; set; }
         public List<ProductImageVM> Images { get; set; }
+        public int Rating { get; set; }
+
     }
 }

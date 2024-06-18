@@ -1,0 +1,48 @@
+﻿@model List<Fresh>
+
+<div class="content-wrapper mt-5">
+    <!-- Content -->
+
+    <div class="container ">
+
+        <!-- Basic Bootstrap Table -->
+        <div class="card" style="display:flex; justify-content:center;align-items:center;">
+            <div class="table-responsive text-nowrap">
+                <a asp-area="Admin" asp-controller="Fresh" asp-action="Create">  <button type="button" class="btn btn-success " style="margin-left:300px;">Create</button></a>
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th> Image </th>
+                            <th> Title </th>
+                            <th> SubTitle </th>
+                            <th> Price  </th>
+                            <th> Settings </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                     @foreach (var item in Model)
+                        {
+                            <tr>
+
+                                <td> <img src="~/img/@item.Image"> </td>
+                                <td> @item.Title </td>
+                                <td> @item.SubTitle </td>
+                                <td> @item.PriceFirst.@item.PriceSecond </td>
+                                <td>
+                                    <a class="btn btn-info" asp-area="Admin" asp-controller="Fresh" asp-route-id="@item.Id" asp-action="Detail">Detail</a>
+                                    <a class="btn btn-primary" asp-area="Admin" asp-controller="Fresh" asp-route-id="@item.Id" asp-action="Edit">Edit</a>
+                                    <a class="btn btn-danger" asp-area="Admin" asp-controller="Fresh" asp-route-id="@item.Id" asp-action="Delete">Delete</a>
+                                </td>
+                            </tr>
+                        }
+
+               
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <!--/ Basic Bootstrap Table -->
+    </div>

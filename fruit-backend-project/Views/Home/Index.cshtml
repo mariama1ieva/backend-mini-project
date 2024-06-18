@@ -66,50 +66,21 @@
 <div class="container-fluid featurs py-5">
     <div class="container py-5">
         <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
-                <div class="featurs-item text-center rounded bg-light p-4">
-                    <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
-                        <i class="fas fa-car-side fa-3x text-white"></i>
-                    </div>
-                    <div class="featurs-content text-center">
-                        <h5>Free Shipping</h5>
-                        <p class="mb-0">Free on order over $300</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="featurs-item text-center rounded bg-light p-4">
-                    <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
-                        <i class="fas fa-user-shield fa-3x text-white"></i>
-                    </div>
-                    <div class="featurs-content text-center">
-                        <h5>Security Payment</h5>
-                        <p class="mb-0">100% security payment</p>
+          @foreach (var item in Model.Features)
+            {
+                <div class="col-md-6 col-lg-3">
+                    <div class="featurs-item text-center rounded bg-light p-4">
+                        <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                            <i class="@item.Icon"></i>
+                        </div>
+                        <div class="featurs-content text-center">
+                            <h5>@item.Name</h5>
+                            <p class="mb-0">@item.Description</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="featurs-item text-center rounded bg-light p-4">
-                    <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
-                        <i class="fas fa-exchange-alt fa-3x text-white"></i>
-                    </div>
-                    <div class="featurs-content text-center">
-                        <h5>30 Day Return</h5>
-                        <p class="mb-0">30 day money guarantee</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="featurs-item text-center rounded bg-light p-4">
-                    <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
-                        <i class="fa fa-phone-alt fa-3x text-white"></i>
-                    </div>
-                    <div class="featurs-content text-center">
-                        <h5>24/7 Support</h5>
-                        <p class="mb-0">Support every time fast</p>
-                    </div>
-                </div>
-            </div>
+            }
+          
         </div>
     </div>
 </div>
@@ -178,15 +149,15 @@
 <div class="container-fluid service py-5">
     <div class="container py-5">
         <div class="row g-4 justify-content-center">
-            @foreach (var item in Model.Features)
+            @foreach (var item in Model.ServiceContents)
             {
                 <div class="col-md-6 col-lg-4">
                     <a href="#">
                         <div class="service-item bg-secondary rounded border border-secondary">
-                            <img src="~/img/@item.Icon" class="img-fluid rounded-top w-100" alt="">
+                            <img src="~/img/@item.Image" class="img-fluid rounded-top w-100" alt="">
                             <div class="px-4 rounded-bottom">
                                 <div class="service-content bg-primary text-center p-4 rounded">
-                                    <h5 class="text-white">@item.Name</h5>
+                                    <h5 class="text-white">@item.Title</h5>
                                     <h3 class="mb-0">@item.Description</h3>
                                 </div>
                             </div>
@@ -208,7 +179,7 @@
             {
                 <div class="border border-primary rounded position-relative vesitable-item">
                     <div class="vesitable-img">
-                        <img src="~/img/@item.ProductImages.FirstOrDefault(m=>m.IsMain).Image" class="img-fluid w-100 rounded-top" alt="">
+                        <img src="~/img/@item.ProductImages.FirstOrDefault(m=>m.IsMain)?.Image" class="img-fluid w-100 rounded-top" alt="">
                     </div>
                     <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">@item.Category.Name</div>
                     <div class="p-4 rounded-bottom">
@@ -216,6 +187,7 @@
                         <p>@item.Description</p>
                         <div class="d-flex justify-content-between flex-lg-wrap">
                             <p class="text-dark fs-5 fw-bold mb-0">$@item.Price.ToString("N2") / kg</p>
+
                             <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                         </div>
                     </div>
@@ -231,9 +203,9 @@
         <div class="row g-4 align-items-center">
             <div class="col-lg-6">
                 <div class="py-4">
-                    <h1 class="display-3 text-white">Fresh Exotic Fruits</h1>
-                    <p class="fw-normal display-3 text-dark mb-4">in Our Store</p>
-                    <p class="mb-4 text-dark">The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.</p>
+                    <h1 class="display-3 text-white">@Model.Freshes.Title</h1>
+                    <p class="fw-normal display-3 text-dark mb-4">@Model.Freshes.SubTitle</p>
+                    <p class="mb-4 text-dark">@Model.Freshes.Description</p>
                     <a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">BUY</a>
                 </div>
             </div>
@@ -241,9 +213,9 @@
                 <div class="position-relative">
                     <img src="img/baner-1.png" class="img-fluid w-100 rounded" alt="">
                     <div class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute" style="width: 140px; height: 140px; top: 0; left: 0;">
-                        <h1 style="font-size: 100px;">1</h1>
+                        <h1 style="font-size: 100px;">@Model.Freshes.PriceFirst</h1>
                         <div class="d-flex flex-column">
-                            <span class="h2 mb-0">50$</span>
+                            <span class="h2 mb-0">@Model.Freshes.PriceSecond$</span>
                             <span class="h4 text-muted mb-0">kg</span>
                         </div>
                     </div>

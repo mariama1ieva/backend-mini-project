@@ -11,10 +11,12 @@ namespace fruit_backend_project.Controllers
     {
         private readonly AppDbContext _context;
         private readonly IProductService productService;
-        public HomeController(AppDbContext context, IProductService productService)
+        private readonly ICategoryService categoryService;
+        public HomeController(AppDbContext context, IProductService productService, ICategoryService categoryService)
         {
             _context = context;
             this.productService = productService;
+            this.categoryService = categoryService;
         }
 
 
@@ -27,6 +29,7 @@ namespace fruit_backend_project.Controllers
             List<Feature> features = await _context.Features.ToListAsync();
             List<ServiceContent> serviceContents = await _context.ServiceContents.ToListAsync();
             List<FactContent> factContents = await _context.FactContents.ToListAsync();
+            Fresh freshes = await _context.Freshes.FirstOrDefaultAsync();
 
             HomeVM model = new()
             {
@@ -36,7 +39,8 @@ namespace fruit_backend_project.Controllers
                 Products = products,
                 Features = features,
                 ServiceContents = serviceContents,
-                FactContents = factContents
+                FactContents = factContents,
+                Freshes = freshes
             };
 
             return View(model);

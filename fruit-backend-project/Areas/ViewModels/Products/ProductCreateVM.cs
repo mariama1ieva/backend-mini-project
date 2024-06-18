@@ -31,5 +31,7 @@ namespace fruit_backend_project.Areas.ViewModels.Products
         public string Check { get; set; }
 
         public List<IFormFile> Images { get; set; }
+        public int Rating { get; set; }
+
     }
 }

@@ -166,6 +166,44 @@ namespace fruit_backend_project.Migrations
                     b.ToTable("Features");
                 });
 
+            modelBuilder.Entity("fruit_backend_project.Models.Fresh", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PriceFirst")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PriceSecond")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("SoftDelete")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SubTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Freshes");
+                });
+
             modelBuilder.Entity("fruit_backend_project.Models.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -198,6 +236,9 @@ namespace fruit_backend_project.Migrations
                     b.Property<string>("Quality")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Rating")
+                        .HasColumnType("int");
 
                     b.Property<bool>("SoftDelete")
                         .HasColumnType("bit");

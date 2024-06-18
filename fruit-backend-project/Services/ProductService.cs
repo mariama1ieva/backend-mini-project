@@ -50,6 +50,13 @@ namespace fruit_backend_project.Services
             {
                 Id = m.Id,
                 Name = m.Name,
+                Rating = m.Rating,
+                Weight = m.Weight,
+                MinWeight = m.MinWeight,
+                Check = m.Сheck,
+                Quality = m.Quality,
+                Origin = m.Origin,
+
                 Description = m.Description,
                 Price = m.Price,
                 Image = m.ProductImages.FirstOrDefault(m => m.IsMain).Image,

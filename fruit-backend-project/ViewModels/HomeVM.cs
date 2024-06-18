@@ -13,6 +13,8 @@ namespace fruit_backend_project.ViewModels
 
         public List<ServiceContent> ServiceContents { get; set; }
         public List<FactContent> FactContents { get; set; }
+        public Fresh Freshes { get; set; }
+
 
 
 

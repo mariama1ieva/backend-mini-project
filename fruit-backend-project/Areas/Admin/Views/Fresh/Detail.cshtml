@@ -1,0 +1,20 @@
+﻿@using fruit_backend_project.Areas.ViewModels.Fresh
+@model FreshDetailVM
+
+
+
+<div class="container " style="margin-left:500px;margin-top:100px;">
+
+    <h3><img src="~/img/@Model.Image" style="width:300px;height:250px;"/></h3>
+    <h3> Title: @Model.Title </h3>
+    <h3> SubTitle: @Model.SubTitle </h3>
+    <h3> Description: @Model.Description </h3>
+    <h3> SubTitle: @Model.SubTitle </h3>
+    <h3> Price: @Model.PriceFirst.@Model.PriceFirst </h3>
+
+    <div class=mt-4>
+
+        <a class="btn btn-primary" asp-area="Admin" asp-controller="Fresh" asp-action="Index">Back</a>
+>
+    </div>
+</div>

@@ -1,5 +1,5 @@
 ﻿@using fruit_backend_project.Models
-@model Product
+@model ShopVM
 
 
 <!-- Modal Search Start -->
@@ -39,7 +39,7 @@
                     <div class="col-lg-6">
                         <div class="border rounded">
                             <a href="#">
-                                <img src="~/img/@Model.ProductImages.FirstOrDefault(m=>m.IsMain).Image" class="img-fluid rounded" alt="Image">
+                                <img src="~/img/@Model.Product.ProductImages.FirstOrDefault(m=>m.IsMain).Image" class="img-fluid rounded" alt="Image">
 
                             </a>
 
@@ -47,9 +47,9 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <h4 class="fw-bold mb-3">@Model.Name</h4>
-                        <p class="mb-3">Category: @Model.Category.Name</p>
-                        <h5 class="fw-bold mb-3">@Model.Price.ToString("N2") $</h5>
+                        <h4 class="fw-bold mb-3">@Model.Product.Name</h4>
+                        <p class="mb-3">Category: @Model.Product.Category.Name</p>
+                        <h5 class="fw-bold mb-3">@Model.Product.Price.ToString("N2") $</h5>
                         <div class="d-flex mb-4">
                             <i class="fa fa-star text-secondary"></i>
                             <i class="fa fa-star text-secondary"></i>
@@ -57,7 +57,7 @@
                             <i class="fa fa-star text-secondary"></i>
                             <i class="fa fa-star"></i>
                         </div>
-                        <p class="mb-4">@Model.Description</p>
+                        <p class="mb-4">@Model.Product.Description</p>
                         <div class="input-group quantity mb-5" style="width: 100px;">
                             <div class="input-group-btn">
                                 <button class="btn btn-sm btn-minus rounded-circle bg-light border">
@@ -91,7 +91,7 @@
                         <div class="tab-content mb-5">
                             <div class="tab-pane active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
                                 <p>
-                                    @Model.Description
+                                    @Model.Product.Description
                                 </p>
                              
                                 <div class="px-2">
@@ -102,7 +102,7 @@
                                                     <p class="mb-0">Weight</p>
                                                 </div>
                                                 <div class="col-6">
-                                                    <p class="mb-0">@Model.Weight kg</p>
+                                                    <p class="mb-0">@Model.Product.Weight kg</p>
                                                 </div>
                                             </div>
                                             <div class="row text-center align-items-center justify-content-center py-2">
@@ -110,7 +110,7 @@
                                                     <p class="mb-0">Country of Origin</p>
                                                 </div>
                                                 <div class="col-6">
-                                                    <p class="mb-0">@Model.Origin</p>
+                                                    <p class="mb-0">@Model.Product.Origin</p>
                                                 </div>
                                             </div>
                                             <div class="row bg-light text-center align-items-center justify-content-center py-2">
@@ -118,7 +118,7 @@
                                                     <p class="mb-0">Quality</p>
                                                 </div>
                                                 <div class="col-6">
-                                                    <p class="mb-0">@Model.Quality</p>
+                                                    <p class="mb-0">@Model.Product.Quality</p>
                                                 </div>
                                             </div>
                                             <div class="row text-center align-items-center justify-content-center py-2">
@@ -126,7 +126,7 @@
                                                     <p class="mb-0">Сheck</p>
                                                 </div>
                                                 <div class="col-6">
-                                                    <p class="mb-0">@Model.Сheck</p>
+                                                    <p class="mb-0">@Model.Product.Сheck</p>
                                                 </div>
                                             </div>
                                             <div class="row bg-light text-center align-items-center justify-content-center py-2">
@@ -134,7 +134,7 @@
                                                     <p class="mb-0">Min Weight</p>
                                                 </div>
                                                 <div class="col-6">
-                                                    <p class="mb-0">@Model.MinWeight.ToString("N2") Kg</p>
+                                                    <p class="mb-0">@Model.Product.MinWeight.ToString("N2") Kg</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -242,36 +242,16 @@
                         <div class="mb-4">
                             <h4>Categories</h4>
                             <ul class="list-unstyled fruite-categorie">
-                                <li>
-                                    <div class="d-flex justify-content-between fruite-name">
-                                        <a href="#"><i class="fas fa-apple-alt me-2"></i>Apples</a>
-                                        <span>(3)</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex justify-content-between fruite-name">
-                                        <a href="#"><i class="fas fa-apple-alt me-2"></i>Oranges</a>
-                                        <span>(5)</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex justify-content-between fruite-name">
-                                        <a href="#"><i class="fas fa-apple-alt me-2"></i>Strawbery</a>
-                                        <span>(2)</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex justify-content-between fruite-name">
-                                        <a href="#"><i class="fas fa-apple-alt me-2"></i>Banana</a>
-                                        <span>(8)</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex justify-content-between fruite-name">
-                                        <a href="#"><i class="fas fa-apple-alt me-2"></i>Pumpkin</a>
-                                        <span>(5)</span>
-                                    </div>
-                                </li>
+                            @foreach (var item in Model.Categories)
+                                {
+                                    <li>
+                                        <div class="d-flex justify-content-between fruite-name">
+                                            <a href="#"><i class="fas fa-apple-alt me-2"></i>@item.Name</a>
+                                            <span>(@item.Products.Count())</span>
+                                        </div>
+                                    </li>
+
+                                }
                             </ul>
                         </div>
                     </div>

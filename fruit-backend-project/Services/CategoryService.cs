@@ -26,5 +26,12 @@ namespace fruit_backend_project.Services
             var datas = await _context.Categories.ToListAsync();
             return new SelectList(datas, "Id", "Name");
         }
+
+        public async Task<List<Category>> GetAllCategoriesWithProductCount()
+        {
+            return await _context.Categories.Include(m => m.Products).ToListAsync();
+
+
+        }
     }
 }

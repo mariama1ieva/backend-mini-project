@@ -1,0 +1,43 @@
+﻿@model List<FactContent>
+
+<div class="content-wrapper mt-5">
+    <!-- Content -->
+
+    <div class="container ">
+
+        <!-- Basic Bootstrap Table -->
+        <div class="card" style="display:flex; justify-content:center;align-items:center;">
+            <div class="table-responsive text-nowrap">
+                <a asp-area="Admin" asp-controller="Fact" asp-action="Create">  <button type="button" class="btn btn-success " style="margin-left:300px;">Create</button></a>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th> Title </th>
+                            <th> NumberInfo </th>
+                            <th> Icon </th>
+                            <th> Operation </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td> @item.Title </td>
+                                <td> @item.NumberInfo </td>
+                                <td> @item.Icon </td>
+                                <td>
+                                    <a class="btn btn-info" asp-area="Admin" asp-controller="Fact" asp-route-id="@item.Id" asp-action="Detail">Detail</a>
+                                    <a class="btn btn-primary" asp-area="Admin" asp-controller="Fact" asp-route-id="@item.Id" asp-action="Edit">Edit</a>
+                                    <a class="btn btn-danger" asp-area="Admin" asp-controller="Fact" asp-route-id="@item.Id" asp-action="Delete">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+        <!--/ Basic Bootstrap Table -->
+    </div>

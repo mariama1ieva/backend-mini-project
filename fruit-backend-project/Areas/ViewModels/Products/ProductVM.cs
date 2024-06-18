@@ -14,6 +14,9 @@
         public string Quality { get; set; }
         public string Check { get; set; }
         public string Image { get; set; }
+        public int Rating { get; set; }
+
+
 
 
     }

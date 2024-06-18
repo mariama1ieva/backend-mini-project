@@ -19,7 +19,25 @@
         if (category == 'All') {
             products.parent().fadeIn();
         }
-    })
+    });
+
+    //Sorting
+    $('#fruits').on('change', function () {
+        const value = $(this).val().trim();
+
+        $(".paginate").css("display", "none");
+
+        $(".products .product-item").slice(0).remove();
+
+        $.ajax({
+            type: "Get",
+            url: "Shop/Sorting",
+            data: { sort: value },
+            success: function (res) {
+                $('.products').append(res);
+            },
+        });
+    });
 
     // Spinner
     var spinner = function () {

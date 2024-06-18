@@ -72,7 +72,9 @@ namespace fruit_backend_project.Areas.Admin.Controllers
                 Quality = product.Quality,
                 Check = product.Сheck,
                 MinWeight = product.MinWeight,
-                Weight = product.Weight
+                Weight = product.Weight,
+                Rating = product.Rating,
+                Origin = product.Origin,
 
             };
             return View(model);
@@ -137,7 +139,8 @@ namespace fruit_backend_project.Areas.Admin.Controllers
                 MinWeight = request.MinWeight,
                 Origin = request.Origin,
                 Сheck = request.Check,
-                Quality = request.Quality
+                Quality = request.Quality,
+                Rating = request.Rating
 
             };
 
@@ -168,7 +171,7 @@ namespace fruit_backend_project.Areas.Admin.Controllers
             }
 
 
-            return View(new ProductEditVM { Name = product.Name, Description = product.Description, Images = productImage, Weight = product.Weight, Price = product.Price, Origin = product.Origin, Check = product.Сheck, Quality = product.Quality });
+            return View(new ProductEditVM { Name = product.Name, Description = product.Description, Images = productImage, Weight = product.Weight, Price = product.Price, Origin = product.Origin, Check = product.Сheck, Quality = product.Quality, Rating = product.Rating });
 
         }
 
@@ -231,6 +234,7 @@ namespace fruit_backend_project.Areas.Admin.Controllers
             existProduct.MinWeight = productEditVM.MinWeight;
             existProduct.Origin = productEditVM.Origin;
             existProduct.Сheck = productEditVM.Check;
+            existProduct.Rating = productEditVM.Rating;
             existProduct.CategoryId = (int)productEditVM.CategoryId;
 
             await _context.SaveChangesAsync();

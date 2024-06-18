@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|c:\\users\\asus\\onedrive\\desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\areas\\admin\\views\\servicecontent\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|solutionrelative:fruit-backend-project\\areas\\admin\\views\\servicecontent\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|c:\\users\\asus\\onedrive\\desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|solutionrelative:fruit-backend-project\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|c:\\users\\asus\\onedrive\\desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\areas\\admin\\views\\feature\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|solutionrelative:fruit-backend-project\\areas\\admin\\views\\feature\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|c:\\users\\asus\\onedrive\\desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|solutionrelative:fruit-backend-project\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|c:\\users\\asus\\onedrive\\desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\areas\\admin\\controllers\\servicecontentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|solutionrelative:fruit-backend-project\\areas\\admin\\controllers\\servicecontentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|c:\\users\\asus\\onedrive\\desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|solutionrelative:fruit-backend-project\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|c:\\users\\asus\\onedrive\\desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\areas\\admin\\controllers\\featurecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|solutionrelative:fruit-backend-project\\areas\\admin\\controllers\\featurecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|c:\\users\\asus\\onedrive\\desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|solutionrelative:fruit-backend-project\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|c:\\users\\asus\\onedrive\\desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{240DC681-A791-4524-82ED-C0823DDC89D6}|fruit-backend-project\\fruit-backend-project.csproj|solutionrelative:fruit-backend-project\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\Admin\\Views\\ServiceContent\\Edit.cshtml",
-              "RelativeDocumentMoniker": "fruit-backend-project\\Areas\\Admin\\Views\\ServiceContent\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\Admin\\Views\\ServiceContent\\Edit.cshtml",
-              "RelativeToolTip": "fruit-backend-project\\Areas\\Admin\\Views\\ServiceContent\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAVAAAA",
+              "DocumentIndex": 3,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "RelativeDocumentMoniker": "fruit-backend-project\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "RelativeToolTip": "fruit-backend-project\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAEkAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-18T05:32:03.009Z",
+              "WhenOpened": "2024-06-18T22:41:44.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "fruit-backend-project\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "fruit-backend-project\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAABYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-18T22:33:56.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "fruit-backend-project\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "fruit-backend-project\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-18T22:18:53.407Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\Admin\\Views\\Feature\\Edit.cshtml",
-              "RelativeDocumentMoniker": "fruit-backend-project\\Areas\\Admin\\Views\\Feature\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\Admin\\Views\\Feature\\Edit.cshtml",
-              "RelativeToolTip": "fruit-backend-project\\Areas\\Admin\\Views\\Feature\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "fruit-backend-project\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "fruit-backend-project\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-18T05:31:51.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FeatureController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\Admin\\Controllers\\FeatureController.cs",
-              "RelativeDocumentMoniker": "fruit-backend-project\\Areas\\Admin\\Controllers\\FeatureController.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\Admin\\Controllers\\FeatureController.cs",
-              "RelativeToolTip": "fruit-backend-project\\Areas\\Admin\\Controllers\\FeatureController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T05:22:01.379Z",
+              "WhenOpened": "2024-06-18T22:17:36.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ServiceContentController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\Admin\\Controllers\\ServiceContentController.cs",
-              "RelativeDocumentMoniker": "fruit-backend-project\\Areas\\Admin\\Controllers\\ServiceContentController.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Areas\\Admin\\Controllers\\ServiceContentController.cs",
-              "RelativeToolTip": "fruit-backend-project\\Areas\\Admin\\Controllers\\ServiceContentController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwCIAAAAJAAAA",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "fruit-backend-project\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "fruit-backend-project\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T16:36:26.944Z",
+              "WhenOpened": "2024-06-18T22:11:41.916Z",
               "EditorCaption": ""
             }
           ]

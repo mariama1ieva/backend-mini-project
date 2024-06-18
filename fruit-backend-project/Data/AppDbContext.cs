@@ -18,6 +18,8 @@ namespace fruit_backend_project.Data
         public DbSet<Feature> Features { get; set; }
         public DbSet<FactContent> FactContents { get; set; }
         public DbSet<ServiceContent> ServiceContents { get; set; }
+        public DbSet<Fresh> Freshes { get; set; }
+
 
 
 
