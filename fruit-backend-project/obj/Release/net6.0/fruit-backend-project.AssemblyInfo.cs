@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("fruit-backend-project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c17f7523ed1cdc2928f01d429a69ef72d6144940")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab7be859e911c717ec599be68d00b97654a47b9d")]
 [assembly: System.Reflection.AssemblyProductAttribute("fruit-backend-project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("fruit-backend-project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -58,5 +58,19 @@ namespace fruit_backend_project.Controllers
 
             return PartialView("_ProductsFilterPartial", model);
         }
+
+
+        public async Task<IActionResult> Search(string searchText)
+        {
+            IEnumerable<Product> products = await _productService.GetAllAsync();
+
+            products = searchText != null
+                ? products.Where(m => m.Name.ToLower().Contains(searchText.ToLower()))
+                : products.Take(6);
+
+            ShopVM model = new() { Products = products };
+
+            return PartialView("_ProductFilterPartial", model);
+        }
     }
 }
