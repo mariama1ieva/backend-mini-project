@@ -171,7 +171,19 @@ namespace fruit_backend_project.Areas.Admin.Controllers
             }
 
 
-            return View(new ProductEditVM { Name = product.Name, Description = product.Description, Images = productImage, Weight = product.Weight, Price = product.Price, Origin = product.Origin, Check = product.Сheck, Quality = product.Quality, Rating = product.Rating });
+            return View(new ProductEditVM
+            {
+                Name = product.Name,
+                Description = product.Description,
+                Images = productImage,
+                Weight = product.Weight,
+                Price = product.Price,
+                Origin = product.Origin,
+                Check = product.Сheck,
+                Quality = product.Quality,
+                Rating = product.Rating,
+                MinWeight = product.MinWeight
+            });
 
         }
 
@@ -180,9 +192,23 @@ namespace fruit_backend_project.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(ProductEditVM productEditVM, int? id)
         {
-            if (!ModelState.IsValid) return View();
-            if (id == null) return BadRequest();
             Product existProduct = await _service.GetByIdAsync((int)id);
+
+            //if (!ModelState.IsValid)
+            //{
+            //    productEditVM.Images = "we";
+            //    productEditVM.Name = existProduct.Name;
+            //    productEditVM.Description = existProduct.Description;
+            //    productEditVM.Price = existProduct.Price;
+            //    productEditVM.Check = existProduct.Сheck;
+            //    productEditVM.Weight = existProduct.Weight;
+            //    productEditVM.MinWeight = existProduct.MinWeight;
+            //    productEditVM.Origin = existProduct.Origin;
+            //    productEditVM.Rating = existProduct.Rating;
+            //    productEditVM.CategoryId = (int)existProduct.CategoryId;
+            //    return View(productEditVM);
+            //}
+            if (id == null) return BadRequest();
             if (existProduct == null) return NotFound();
 
             if (productEditVM.Photos != null)

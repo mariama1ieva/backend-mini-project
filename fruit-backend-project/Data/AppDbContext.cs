@@ -19,6 +19,12 @@ namespace fruit_backend_project.Data
         public DbSet<FactContent> FactContents { get; set; }
         public DbSet<ServiceContent> ServiceContents { get; set; }
         public DbSet<Fresh> Freshes { get; set; }
+        public DbSet<Basket> Baskets { get; set; }
+        public DbSet<BasketProduct> BasketProducts { get; set; }
+
+
+
+
 
 
 

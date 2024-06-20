@@ -1,5 +1,6 @@
 ﻿using fruit_backend_project.Models;
 using fruit_backend_project.Services.Interface;
+using fruit_backend_project.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace fruit_backend_project.Controllers
@@ -7,10 +8,12 @@ namespace fruit_backend_project.Controllers
     public class ProductController : Controller
     {
         private readonly IProductService _productService;
+        private readonly ICategoryService _categoryService;
 
-        public ProductController(IProductService productService)
+        public ProductController(IProductService productService, ICategoryService categoryService)
         {
             _productService = productService;
+            _categoryService = categoryService;
         }
         public async Task<IActionResult> Detail(int? id)
         {
@@ -20,14 +23,14 @@ namespace fruit_backend_project.Controllers
             }
 
             Product product = await _productService.GetByIdAsync((int)id);
+            List<Category> categories = await _categoryService.GetAllCategoriesWithProductCount();
 
             if (product == null)
             {
                 return NotFound();
             }
 
-            return View(product);
+            return View(new ShopVM() { Product = product, Categories = categories });
         }
-
     }
 }

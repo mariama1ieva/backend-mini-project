@@ -70,7 +70,28 @@ namespace fruit_backend_project.Controllers
 
             ShopVM model = new() { Products = products };
 
-            return PartialView("_ProductFilterPartial", model);
+            return PartialView("_ProductsFilterPartial", model);
+        }
+
+        public async Task<IActionResult> CategoryFilter(int id)
+        {
+            IEnumerable<Product> products = await _productService.GetAllAsync();
+
+            ShopVM model = new() { Products = products.Where(m => m.CategoryId == id) };
+
+            return PartialView("_ProductsFilterPartial", model);
+        }
+
+        public async Task<IActionResult> PriceFilter(decimal price)
+        {
+            IEnumerable<Product> products = await _productService.GetAllAsync();
+
+            ShopVM model = new()
+            {
+                Products = price > 0 ? products.Where(m => m.Price <= price) : products
+            };
+
+            return PartialView("_ProductsFilterPartial", model);
         }
     }
 }

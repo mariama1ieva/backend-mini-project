@@ -22,6 +22,112 @@
     });
 
 
+    // Add
+    $(document).on("click", ".add-basket", function () {
+        const btn = $(this);
+        const productId = $(this).attr('product-id');
+        let quantity = null;
+
+        if (btn.prev().find("input").length !== 0) {
+            quantity = btn.prev().find("input").val();
+        }
+
+        $.ajax({
+            type: "Post",
+            url: `/Basket/Add?productId=${productId}&quantity=${quantity}`,
+            success: (res) => {
+                if (!res.redirectUrl) {
+                    Swal.fire({
+                        icon: "success",
+                        title: "Added to cart!",
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+
+                    const count = $(".basket-count");
+
+                    if (quantity !== null) {
+                        count.text(parseInt(count.text()) + parseInt(quantity));
+                    } else {
+                        count.text(parseInt(count.text()) + 1);
+                    }
+                } else {
+                    window.location.href = res.redirectUrl;
+                }
+            }
+        });
+    });
+
+    // Basket delete
+    $('.basket-delete').on('click', function (e) {
+        e.preventDefault();
+
+        const basketBtn = $(this);
+
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                const categoryId = $(this).attr('basket-id');
+
+                $.ajax({
+                    type: "Post",
+                    url: "Basket/Delete",
+                    data: { id: categoryId },
+                    success: function (res) {
+                        Swal.fire({
+                            title: "Deleted!",
+                            text: "Your product was removed from cart.",
+                            icon: "success"
+                        });
+
+                        basketBtn.parent().parent().remove();
+                    },
+                });
+            }
+        });
+    });
+
+    // Category filter
+    $('.category-filter').on('click', function () {
+        const categoryId = $(this).attr('category-id');
+
+        $(".paginate").css("display", "none");
+
+        $(".products .product-item").slice(0).remove();
+
+        $.ajax({
+            type: "Get",
+            url: `Shop/CategoryFilter?id=${categoryId}`,
+            success: function (res) {
+                $('.products').append(res);
+            },
+        });
+    });
+
+    //Price filter
+    $('.form-range').on('change', function () {
+        const value = $(this).val().trim();
+
+        $(".paginate").css("display", "none");
+
+        $(".products .product-item").slice(0).remove();
+
+        $.ajax({
+            type: "Get",
+            url: `Shop/PriceFilter?price=${value}`,
+            success: function (res) {
+                $('.products').append(res);
+            },
+        });
+    });
+
     // Search
     $(document).on("keyup", ".search", function () {
         const value = $(this).val().trim();
@@ -36,12 +142,12 @@
 
         $.ajax({
             type: "Get",
-            url: Shop / Search ? searchText = ${ value },
+            url: `Shop/Search?searchText=${value}`,
             success: function (res) {
                 $(".products").append(res);
             }
-        });
-});
+        });
+    });
 
     //Sorting
     $('#fruits').on('change', function () {
@@ -86,20 +192,20 @@
             } else {
                 $('.fixed-top').removeClass('shadow').css('top', 0);
             }
-        } 
+        }
     });
-    
-    
-   // Back to top button
-   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-        $('.back-to-top').fadeIn('slow');
-    } else {
-        $('.back-to-top').fadeOut('slow');
-    }
+
+
+    // Back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -112,27 +218,27 @@
         dots: true,
         loop: true,
         margin: 25,
-        nav : true,
-        navText : [
+        nav: true,
+        navText: [
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-right"></i>'
         ],
         responsiveClass: true,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:1
+            768: {
+                items: 1
             },
-            992:{
-                items:2
+            992: {
+                items: 2
             },
-            1200:{
-                items:2
+            1200: {
+                items: 2
             }
         }
     });
@@ -146,27 +252,27 @@
         dots: true,
         loop: true,
         margin: 25,
-        nav : true,
-        navText : [
+        nav: true,
+        navText: [
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-right"></i>'
         ],
         responsiveClass: true,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:2
+            768: {
+                items: 2
             },
-            992:{
-                items:3
+            992: {
+                items: 3
             },
-            1200:{
-                items:4
+            1200: {
+                items: 4
             }
         }
     });

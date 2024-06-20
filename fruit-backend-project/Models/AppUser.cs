@@ -6,5 +6,6 @@ namespace fruit_backend_project.Models
     {
         public string FullName { get; set; }
         public ICollection<Review> Reviews { get; set; }
+        public Basket Basket { get; set; }
     }
 }

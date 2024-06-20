@@ -22,6 +22,7 @@ namespace fruit_backend_project.Models
         public decimal MinWeight { get; set; }
         public ICollection<ProductImage> ProductImages { get; set; }
         public ICollection<Review> Reviews { get; set; }
+        public ICollection<BasketProduct> BasketProducts { get; set; }
 
     }
 }
