@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kpUF8IRPWpsQGtZFS3+w3qTHT5ZA2h06sxwFN9xTcqRWmbJhIS4RqdRPT7mKuPpU/0P3FdLwd06EpkpinkG+Ew==",
+  "dgSpecHash": "Md2kDO471hh3XlrpzbrmldVSSGH1yQddkuUg2IW4badfjn8OMFa+9Vl2w01n3nxT0LMbhBg3/09MSyBphbw+OA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\fruit-backend-project.csproj",
+  "projectFilePath": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\Tofiq777\\fruit-backend-project\\fruit-backend-project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
