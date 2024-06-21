@@ -46,8 +46,9 @@ namespace fruit_backend_project.Controllers
                 return View(request);
             }
 
-            await _userManager.AddToRoleAsync(user, UserRole.Admin.ToString());
+            await _userManager.AddToRoleAsync(user, UserRole.Member.ToString());
             await _signInManager.SignInAsync(user, false);
+
             return RedirectToAction("Login", "Account");
         }
         [HttpGet]

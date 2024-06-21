@@ -23,6 +23,7 @@ namespace fruit_backend_project.Controllers
             }
 
             Product product = await _productService.GetByIdAsync((int)id);
+            List<Product> products = await _productService.GetAllAsync();
             List<Category> categories = await _categoryService.GetAllCategoriesWithProductCount();
 
             if (product == null)
@@ -30,7 +31,7 @@ namespace fruit_backend_project.Controllers
                 return NotFound();
             }
 
-            return View(new ShopVM() { Product = product, Categories = categories });
+            return View(new ShopVM() { Product = product, Categories = categories, Products = products });
         }
     }
 }

@@ -107,7 +107,7 @@ namespace fruit_backend_project.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(FactEditVM update, int? id)
+        public async Task<IActionResult> Edit(FactEditVM edit, int? id)
         {
             if (!ModelState.IsValid)
             {
@@ -117,11 +117,11 @@ namespace fruit_backend_project.Areas.Admin.Controllers
             if (id == null) return BadRequest();
             FactContent factContent = await _context.FactContents.Where(c => c.Id == id).FirstOrDefaultAsync();
 
-            if (update == null) return NotFound();
+            if (edit == null) return NotFound();
 
-            factContent.Title = update.Title;
-            factContent.Icon = update.Icon;
-            factContent.NumberInfo = update.NumberInfo;
+            factContent.Title = edit.Title;
+            factContent.Icon = edit.Icon;
+            factContent.NumberInfo = edit.NumberInfo;
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
 

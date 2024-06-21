@@ -137,7 +137,94 @@ namespace fruit_backend_project.Controllers
 
             return Ok();
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Increase(int id)
+        {
+            if (id == null)
+                return RedirectToAction("NotFound", "Error");
+
+            AppUser existUser = await _userManager.FindByNameAsync(User.Identity.Name);
+
+            BasketProduct basketProduct = await _context.BasketProducts.Include(m => m.Product).FirstOrDefaultAsync(m => m.Id == id);
+
+            if (basketProduct == null)
+                return RedirectToAction("NotFound", "Error");
+
+            basketProduct.Quantity++;
+            await _context.SaveChangesAsync();
+
+            decimal totalPrice = basketProduct.Product.Price * basketProduct.Quantity;
+            decimal total = await _context.BasketProducts.Where(m => m.Basket.AppUserId == existUser.Id)
+                 .SumAsync(m => m.Product.Price * m.Quantity);
+
+            return Ok(new { totalPrice, total });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Decrease(int id)
+        {
+            if (id == null)
+                return RedirectToAction("NotFound", "Error");
+
+            AppUser existUser = await _userManager.FindByNameAsync(User.Identity.Name);
+
+            BasketProduct basketProduct = await _context.BasketProducts.Include(m => m.Product).FirstOrDefaultAsync(m => m.Id == id);
+
+            if (basketProduct == null)
+                return RedirectToAction("NotFound", "Error");
+
+            if (basketProduct.Quantity > 1)
+            {
+                basketProduct.Quantity--;
+            }
+            else
+            {
+                _context.BasketProducts.Remove(basketProduct);
+                await _context.SaveChangesAsync();
+            }
+
+            await _context.SaveChangesAsync();
+
+            decimal totalPrice = basketProduct.Product.Price * basketProduct.Quantity;
+            decimal total = await _context.BasketProducts.Where(m => m.Basket.AppUserId == existUser.Id)
+                 .SumAsync(m => m.Quantity);
+
+            return Ok(new { totalPrice, total });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ChangeQuantity(int? id, int? quantity)
+        {
+            if (id == null)
+                return RedirectToAction("NotFound", "Error");
+
+            AppUser existUser = await _userManager.FindByNameAsync(User.Identity.Name);
+
+            BasketProduct basketProduct = await _context.BasketProducts.Include(m => m.Product).FirstOrDefaultAsync(m => m.Id == id);
+
+            if (basketProduct == null)
+                return RedirectToAction("NotFound", "Error");
+
+            if (basketProduct.Quantity > 1)
+            {
+                basketProduct.Quantity = quantity ?? basketProduct.Quantity;
+            }
+            else
+            {
+                _context.BasketProducts.Remove(basketProduct);
+                await _context.SaveChangesAsync();
+            }
+
+            await _context.SaveChangesAsync();
+            decimal totalPrice = basketProduct.Product.Price * basketProduct.Quantity;
+            decimal total = await _context.BasketProducts.Where(m => m.Basket.AppUserId == existUser.Id).SumAsync(m => m.Product.Price * m.Quantity);
+            int basketCount = await _context.BasketProducts.Where(m => m.Basket.AppUserId == existUser.Id)
+                 .SumAsync(m => m.Quantity);
+            return Ok(new { totalPrice, total, basketCount });
+        }
     }
+
 
 
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LzkfUc+qmaFIAKFom3zqBjOhmstlqNq8qex5s1oLfCg=",
+  "Hash": "963MZ3uJX63uBnuj67CJB4uexdUGET4OOiyk+ooZTqU=",
   "Source": "fruit-backend-project",
   "BasePath": "_content/fruit-backend-project",
   "Mode": "Default",
@@ -12576,6 +12576,25 @@
       "OriginalItemSpec": "wwwroot\\img\\5e4f29ba-648d-4cbe-bfe6-5fb7bcd72332-best-product-4.jpg"
     },
     {
+      "Identity": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\78c30326-8196-403b-a3b7-d36c43646c2b-baner-1.png",
+      "SourceId": "fruit-backend-project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\",
+      "BasePath": "_content/fruit-backend-project",
+      "RelativePath": "img/78c30326-8196-403b-a3b7-d36c43646c2b-baner-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\78c30326-8196-403b-a3b7-d36c43646c2b-baner-1.png"
+    },
+    {
       "Identity": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\7a46679c-da0b-485a-b235-1d1fc1eb400a-banner-1.png",
       "SourceId": "fruit-backend-project",
       "SourceType": "Discovered",
@@ -12669,25 +12688,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\82a6e3d0-f352-4c57-a74a-c79ab8a7c81a-banner-2.png"
-    },
-    {
-      "Identity": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\8c8b9c27-adb3-4d99-83ec-61bd85cdfc76-author-1.png",
-      "SourceId": "fruit-backend-project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\",
-      "BasePath": "_content/fruit-backend-project",
-      "RelativePath": "img/8c8b9c27-adb3-4d99-83ec-61bd85cdfc76-author-1.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\8c8b9c27-adb3-4d99-83ec-61bd85cdfc76-author-1.png"
     },
     {
       "Identity": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\978f45d1-c1e2-43a7-90b2-390bb9158b04-best-product-6.jpg",
@@ -13068,6 +13068,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\f0cfea74-b203-4c6a-8c9a-2fa1f571d81c-best-product-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\f2bad788-3785-48ef-b782-fe56ec9f7270-best-product-6.jpg",
+      "SourceId": "fruit-backend-project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\",
+      "BasePath": "_content/fruit-backend-project",
+      "RelativePath": "img/f2bad788-3785-48ef-b782-fe56ec9f7270-best-product-6.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\f2bad788-3785-48ef-b782-fe56ec9f7270-best-product-6.jpg"
     },
     {
       "Identity": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\fcd02a83-b61e-4c16-8dd8-c8285e256c86-best-product-5.jpg",

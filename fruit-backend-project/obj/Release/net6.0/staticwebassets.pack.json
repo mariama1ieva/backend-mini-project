@@ -2641,6 +2641,10 @@
       "PackagePath": "staticwebassets\\img\\5e4f29ba-648d-4cbe-bfe6-5fb7bcd72332-best-product-4.jpg"
     },
     {
+      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\78c30326-8196-403b-a3b7-d36c43646c2b-baner-1.png",
+      "PackagePath": "staticwebassets\\img\\78c30326-8196-403b-a3b7-d36c43646c2b-baner-1.png"
+    },
+    {
       "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\7a46679c-da0b-485a-b235-1d1fc1eb400a-banner-1.png",
       "PackagePath": "staticwebassets\\img\\7a46679c-da0b-485a-b235-1d1fc1eb400a-banner-1.png"
     },
@@ -2659,10 +2663,6 @@
     {
       "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\82a6e3d0-f352-4c57-a74a-c79ab8a7c81a-banner-2.png",
       "PackagePath": "staticwebassets\\img\\82a6e3d0-f352-4c57-a74a-c79ab8a7c81a-banner-2.png"
-    },
-    {
-      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\8c8b9c27-adb3-4d99-83ec-61bd85cdfc76-author-1.png",
-      "PackagePath": "staticwebassets\\img\\8c8b9c27-adb3-4d99-83ec-61bd85cdfc76-author-1.png"
     },
     {
       "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\978f45d1-c1e2-43a7-90b2-390bb9158b04-best-product-6.jpg",
@@ -2743,6 +2743,10 @@
     {
       "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\f0cfea74-b203-4c6a-8c9a-2fa1f571d81c-best-product-1.jpg",
       "PackagePath": "staticwebassets\\img\\f0cfea74-b203-4c6a-8c9a-2fa1f571d81c-best-product-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\f2bad788-3785-48ef-b782-fe56ec9f7270-best-product-6.jpg",
+      "PackagePath": "staticwebassets\\img\\f2bad788-3785-48ef-b782-fe56ec9f7270-best-product-6.jpg"
     },
     {
       "Id": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\fruit-backend-project\\fruit-backend-project\\wwwroot\\img\\fcd02a83-b61e-4c16-8dd8-c8285e256c86-best-product-5.jpg",

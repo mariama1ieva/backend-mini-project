@@ -130,38 +130,34 @@ namespace fruit_backend_project.Areas.Admin.Controllers
         public async Task<IActionResult> Edit(SliderEditVM request, int? id)
         {
             Slider existSlider = await _appDbContext.Sliders.FirstOrDefaultAsync(slider => slider.Id == id);
-            if (!ModelState.IsValid)
+
+
+            if (request.Photo != null)
             {
-                request.Image = existSlider.Image;
-                return View(request);
+                if (!request.Photo.CheckFileSize(200))
+                {
+                    ModelState.AddModelError("Photo", "Image size must be 200kb");
+                    return View(request.Photo);
+                }
+
+                if (!request.Photo.CheckFileFormat("image/"))
+                {
+                    ModelState.AddModelError("Photo", "Image format is wrong");
+                    return View(request.Photo);
+                }
+
+                FileExtention.DeleteFileFromLocalAsync(Path.Combine(_webHostEnvironment.WebRootPath, "img"), existSlider.Image);
+
+                string fileName = Guid.NewGuid().ToString() + "-" + request.Photo.FileName;
+                string path = Path.Combine(_webHostEnvironment.WebRootPath, "img", fileName);
+                await request.Photo.SaveFileToLocalAsync(path);
+
+                existSlider.Image = fileName;
             }
+
             if (existSlider == null) { return NotFound(); }
 
-
-            if (!request.Photo.CheckFileSize(200))
-            {
-                ModelState.AddModelError("Photo", "Image size must be 200kb");
-                return View(request);
-            }
-
-            if (!request.Photo.CheckFileFormat("image/"))
-            {
-                ModelState.AddModelError("Photo", "Image format is wrong");
-                return View(request);
-            }
-
-
-
-            FileExtention.DeleteFileFromLocalAsync(Path.Combine(_webHostEnvironment.WebRootPath, "img"), existSlider.Image);
-
-            string fileName = Guid.NewGuid().ToString() + "-" + request.Photo.FileName;
-            string path = Path.Combine(_webHostEnvironment.WebRootPath, "img", fileName);
-            await request.Photo.SaveFileToLocalAsync(path);
-
-
             existSlider.Name = request.Name;
-            existSlider.Image = fileName;
-
 
             await _appDbContext.SaveChangesAsync();
 

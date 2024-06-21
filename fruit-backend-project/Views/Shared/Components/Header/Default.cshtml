@@ -46,13 +46,27 @@
                     </a> 
                     @if (User.Identity.IsAuthenticated)
                     {
+                        if (User.IsInRole("Admin"))
+                        {
+                            <div class="position-relative">
+                                <h6 class=" mt-2 mx-3">@User.Identity.Name</h6>
+                                <a asp-action="Index" asp-controller="Dashboard" asp-area="Admin" style="margin-top:-12px;" class=" position-absolute mx-3">Admin area</a>
+                                <a asp-action="Logout" asp-controller="Account" style="margin-top:8px;" class=" position-absolute mx-3">Log Out</a>
 
-                        <div class="position-relative">
-                            <h6 class=" mt-2 mx-3">@User.Identity.Name</h6>
-                            <a asp-action="Logout" asp-controller="Account" style="margin-top:-12px;" class=" position-absolute mx-3">Log Out</a>
 
-                        </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="position-relative">
+                                <h6 class=" mt-2 mx-3">@User.Identity.Name</h6>
+                                <a asp-action="Logout" asp-controller="Account" style="margin-top:-12px;" class=" position-absolute mx-3">Log Out</a>
+
+                            </div>
+                        }
+                     
                     }
+                 
                     else
                     {
                         <div class="position-relative">

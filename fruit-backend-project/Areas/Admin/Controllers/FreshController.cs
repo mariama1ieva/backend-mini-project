@@ -98,7 +98,7 @@ namespace fruit_backend_project.Areas.Admin.Controllers
         public async Task<IActionResult> Edit(int id)
         {
             if (id == null) return BadRequest();
-            Fresh fresh = await _context.Freshes.Where(c => c.Id == id).FirstOrDefaultAsync();
+            Fresh fresh = await _context.Freshes.FirstOrDefaultAsync(c => c.Id == id);
             if (fresh == null) return NotFound();
 
             return View(new FreshEditVM
@@ -117,7 +117,7 @@ namespace fruit_backend_project.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(int id, FreshEditVM request)
         {
-            Fresh fresh = await _context.Freshes.Where(c => c.Id == id).FirstOrDefaultAsync();
+            Fresh fresh = await _context.Freshes.FirstOrDefaultAsync(c => c.Id == id);
             if (!ModelState.IsValid)
             {
                 request.Image = fresh.Image;
