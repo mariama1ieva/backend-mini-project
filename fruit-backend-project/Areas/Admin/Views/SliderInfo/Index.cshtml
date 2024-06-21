@@ -1,0 +1,40 @@
+﻿@model SliderInfo
+
+<div class="content-wrapper mt-5">
+    <!-- Content -->
+
+    <div class="container ">
+
+        <!-- Basic Bootstrap Table -->
+        <div class="card" style="display:flex; justify-content:center;align-items:center;">
+            <div class="table-responsive text-nowrap">
+                <a asp-area="Admin" asp-controller="SliderInfo" asp-action="Create">  <button type="button" class="btn btn-success " style="margin-left:300px;">Create</button></a>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th> Title </th>
+                            <th> SubTitle </th>
+                            <th> Operation </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                                <td> @Model.Title </td>
+                            <td> @Model.SubTitle </td>
+                           
+                                <td>
+                                <a class="btn btn-info" asp-area="Admin" asp-controller="SliderInfo" asp-route-id="@Model.Id" asp-action="Detail">Detail</a>
+                                <a class="btn btn-primary" asp-area="Admin" asp-controller="SliderInfo" asp-route-id="@Model.Id" asp-action="Edit">Edit</a>
+                                <a class="btn btn-danger" asp-area="Admin" asp-controller="SliderInfo" asp-route-id="@Model.Id" asp-action="Delete">Delete</a>
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+        <!--/ Basic Bootstrap Table -->
+    </div>

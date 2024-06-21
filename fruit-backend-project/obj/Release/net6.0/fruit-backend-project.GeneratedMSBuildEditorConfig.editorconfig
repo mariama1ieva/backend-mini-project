@@ -42,6 +42,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRmFjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Asus/OneDrive/Desktop/backend-mini-project/Tofiq777/fruit-backend-project/Areas/Admin/Views/Fact/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRmFjdFxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Asus/OneDrive/Desktop/backend-mini-project/Tofiq777/fruit-backend-project/Areas/Admin/Views/Fact/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRmFjdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -112,6 +116,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Asus/OneDrive/Desktop/backend-mini-project/Tofiq777/fruit-backend-project/Areas/Admin/Views/ServiceContent/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZUNvbnRlbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive/Desktop/backend-mini-project/Tofiq777/fruit-backend-project/Areas/Admin/Views/SliderInfo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVySW5mb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive/Desktop/backend-mini-project/Tofiq777/fruit-backend-project/Areas/Admin/Views/SliderInfo/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVySW5mb1xEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive/Desktop/backend-mini-project/Tofiq777/fruit-backend-project/Areas/Admin/Views/SliderInfo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVySW5mb1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive/Desktop/backend-mini-project/Tofiq777/fruit-backend-project/Areas/Admin/Views/SliderInfo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVySW5mb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Asus/OneDrive/Desktop/backend-mini-project/Tofiq777/fruit-backend-project/Areas/Admin/Views/Slider/Create.cshtml]
