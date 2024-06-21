@@ -130,12 +130,15 @@ namespace fruit_backend_project.Controllers
             }
 
             BasketProduct basketProduct = await _context.BasketProducts
-                .FirstOrDefaultAsync(m => m.Id == id && m.Basket.AppUserId == existUser.Id);
+                .FirstOrDefaultAsync(m => m.Id == id);
 
             _context.BasketProducts.Remove(basketProduct);
             await _context.SaveChangesAsync();
 
-            return Ok();
+            decimal total = await _context.BasketProducts.Where(m => m.Basket.AppUserId == existUser.Id)
+                 .SumAsync(m => m.Product.Price * m.Quantity);
+
+            return Ok(total);
         }
 
         [HttpPost]
@@ -188,7 +191,7 @@ namespace fruit_backend_project.Controllers
 
             decimal totalPrice = basketProduct.Product.Price * basketProduct.Quantity;
             decimal total = await _context.BasketProducts.Where(m => m.Basket.AppUserId == existUser.Id)
-                 .SumAsync(m => m.Quantity);
+                 .SumAsync(m => m.Product.Price * m.Quantity);
 
             return Ok(new { totalPrice, total });
         }

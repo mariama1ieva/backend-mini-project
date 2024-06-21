@@ -53,7 +53,6 @@ namespace fruit_backend_project.Controllers
             }
 
             await _userManager.AddToRoleAsync(user, UserRole.Member.ToString());
-            await _signInManager.SignInAsync(user, false);
 
             string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
             string url = Url.Action(nameof(ConfirmEmail), "Account", new { userId = user.Id, token }, Request.Scheme, Request.Host.ToString());
@@ -63,7 +62,7 @@ namespace fruit_backend_project.Controllers
             email.From.Add(MailboxAddress.Parse("maryamfa@code.edu.az"));
             email.To.Add(MailboxAddress.Parse(user.Email));
             email.Subject = "Register confirmation";
-            email.Body = new TextPart(TextFormat.Html) { Text = $"<a href= `{url}`>Click here</a>" };
+            email.Body = new TextPart(TextFormat.Html) { Text = $"<a href=`{url}`>Click here</a>" };
 
             // send email
             using var smtp = new SmtpClient();
@@ -84,7 +83,6 @@ namespace fruit_backend_project.Controllers
         }
 
 
-        [HttpPost]
         public async Task<IActionResult> ConfirmEmail(string userId, string token)
         {
             var user = await _userManager.FindByIdAsync(userId);
