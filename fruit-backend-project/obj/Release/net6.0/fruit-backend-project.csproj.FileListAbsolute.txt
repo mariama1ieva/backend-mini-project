@@ -254,3 +254,9 @@ C:\Users\Asus\OneDrive\Desktop\backend-mini-project\fruit-backend-project\fruit-
 C:\Users\Asus\OneDrive\Desktop\backend-mini-project\fruit-backend-project\fruit-backend-project\obj\Release\net6.0\fruit-backend-project.pdb
 C:\Users\Asus\OneDrive\Desktop\backend-mini-project\fruit-backend-project\fruit-backend-project\obj\Release\net6.0\fruit-backend-project.genruntimeconfig.cache
 C:\Users\Asus\OneDrive\Desktop\backend-mini-project\fruit-backend-project\fruit-backend-project\obj\Release\net6.0\ref\fruit-backend-project.dll
+C:\Users\Asus\OneDrive\Desktop\backend-mini-project\fruit-backend-project\fruit-backend-project\bin\Release\net6.0\BouncyCastle.Cryptography.dll
+C:\Users\Asus\OneDrive\Desktop\backend-mini-project\fruit-backend-project\fruit-backend-project\bin\Release\net6.0\MailKit.dll
+C:\Users\Asus\OneDrive\Desktop\backend-mini-project\fruit-backend-project\fruit-backend-project\bin\Release\net6.0\MimeKit.dll
+C:\Users\Asus\OneDrive\Desktop\backend-mini-project\fruit-backend-project\fruit-backend-project\bin\Release\net6.0\System.Formats.Asn1.dll
+C:\Users\Asus\OneDrive\Desktop\backend-mini-project\fruit-backend-project\fruit-backend-project\bin\Release\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Asus\OneDrive\Desktop\backend-mini-project\fruit-backend-project\fruit-backend-project\bin\Release\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll

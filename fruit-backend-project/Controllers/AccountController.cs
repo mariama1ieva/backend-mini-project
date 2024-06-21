@@ -1,8 +1,14 @@
 ﻿using fruit_backend_project.Helpers.Enums;
 using fruit_backend_project.Models;
 using fruit_backend_project.ViewModels.Account;
+using MailKit.Net.Smtp;
+using MailKit.Security;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using MimeKit;
+using MimeKit.Text;
+
+
 
 namespace fruit_backend_project.Controllers
 {
@@ -49,8 +55,45 @@ namespace fruit_backend_project.Controllers
             await _userManager.AddToRoleAsync(user, UserRole.Member.ToString());
             await _signInManager.SignInAsync(user, false);
 
-            return RedirectToAction("Login", "Account");
+            string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+            string url = Url.Action(nameof(ConfirmEmail), "Account", new { userId = user.Id, token }, Request.Scheme, Request.Host.ToString());
+
+            // create email message
+            var email = new MimeMessage();
+            email.From.Add(MailboxAddress.Parse("maryamfa@code.edu.az"));
+            email.To.Add(MailboxAddress.Parse(user.Email));
+            email.Subject = "Register confirmation";
+            email.Body = new TextPart(TextFormat.Html) { Text = $"<a href= `{url}`>Click here</a>" };
+
+            // send email
+            using var smtp = new SmtpClient();
+            smtp.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
+            smtp.Authenticate("maryamfa@code.edu.az", "unxq urwc cijg cvtv");
+            smtp.Send(email);
+            smtp.Disconnect(true);
+
+            return RedirectToAction(nameof(VerifyEmail));
         }
+
+
+        [HttpGet]
+        public IActionResult VerifyEmail()
+        {
+
+            return View();
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> ConfirmEmail(string userId, string token)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            await _userManager.ConfirmEmailAsync(user, token);
+            return RedirectToAction(nameof(Login));
+        }
+
+
+
         [HttpGet]
         public IActionResult Login()
         {
