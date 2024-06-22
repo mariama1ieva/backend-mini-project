@@ -124,28 +124,29 @@
                     </div>
                     <div class="col-lg-9">
                         <div class="products row g-4 justify-content-center">
+                          
                             @foreach (var item in Model.Products)
                             {
-                                <div class="col-md-6 col-lg-4 col-xl-3">
-                                    <a asp-controller="Product" asp-action="Detail" asp-route-id="@item.Id">
-                                        <div class="rounded position-relative fruite-item" category-id="@item.CategoryId">
+                                <div class="col-md-6 col-lg-6 col-xl-4 product-item">
+                                    <div class="rounded position-relative fruite-item">
+                                        <a asp-action="Detail" asp-route-id="@item.Id">
                                             <div class="fruite-img">
-                                                <img style="height: 100%" src="~/img/@item.ProductImages.FirstOrDefault(m => m.IsMain)?.Image" class="img-fluid w-100 rounded-top" alt="">
+                                                <img style="height: 214.2px;" src="~/img/@item.ProductImages.FirstOrDefault(m => m.IsMain)?.Image" class="img-fluid w-100 rounded-top" alt="">
                                             </div>
-                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">@item.Category.Name</div>
-                                            <div class="p-4 border   rounded-bottom">
-                                                <h4>@item.Name</h4>
-                                                <p>@item.Description</p>
-                                                <div class="d-flex justify-content-between flex-lg-wrap">
-                                                    <p class="text-dark fs-5 fw-bold mb-0">$@item.Price.ToString("N2") / kg</p>
-                                                    <a class="add-basket btn border border-secondary rounded-pill px-3 text-primary" product-id="@item.Id"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                                </div>
+                                        </a>
+                                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">@item.Category.Name</div>
+                                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                            <h4>@item.Name</h4>
+                                            <p>@item.Description</p>
+                                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                                <p class="text-dark fs-5 fw-bold mb-0">$@item.Price / kg</p>
+                                                <a class="add-basket btn border border-secondary rounded-pill px-3 text-primary" product-id="@item.Id"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+
                                             </div>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
                             }
-
                         </div>
 
                         <div class="col-12 paginate">
