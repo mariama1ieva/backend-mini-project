@@ -11021,11 +11021,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\Tofiq777\\fruit-backend-project\\fruit-backend-project.csproj",
+      "projectUniqueName": "C:\\Users\\Asus\\OneDrive\\Desktop\\back-project\\fruit-backend-project\\fruit-backend-project.csproj",
       "projectName": "fruit-backend-project",
-      "projectPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\Tofiq777\\fruit-backend-project\\fruit-backend-project.csproj",
+      "projectPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\back-project\\fruit-backend-project\\fruit-backend-project.csproj",
       "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\backend-mini-project\\Tofiq777\\fruit-backend-project\\obj\\",
+      "outputPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\back-project\\fruit-backend-project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",

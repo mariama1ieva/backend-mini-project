@@ -93,5 +93,6 @@ namespace fruit_backend_project.Controllers
 
             return PartialView("_ProductsFilterPartial", model);
         }
+
     }
 }

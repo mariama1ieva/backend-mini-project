@@ -10,6 +10,8 @@ namespace fruit_backend_project.ViewModels
         public List<Category> Categories { get; set; }
         public List<Product> Products { get; set; }
         public List<Feature> Features { get; set; }
+        public List<Review> Reviews { get; set; }
+
 
         public List<ServiceContent> ServiceContents { get; set; }
         public List<FactContent> FactContents { get; set; }

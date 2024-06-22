@@ -28,6 +28,8 @@ namespace fruit_backend_project.Services
         {
             return await _context.Products.Include(m => m.Category)
                                          .Include(m => m.ProductImages)
+                                          .Include(m => m.Reviews)
+                                         .ThenInclude(m => m.AppUser)
                                          .Where(m => !m.SoftDelete)
                                          .FirstOrDefaultAsync(m => m.Id == id);
         }

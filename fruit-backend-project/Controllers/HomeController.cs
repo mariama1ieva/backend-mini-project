@@ -30,6 +30,8 @@ namespace fruit_backend_project.Controllers
             List<ServiceContent> serviceContents = await _context.ServiceContents.ToListAsync();
             List<FactContent> factContents = await _context.FactContents.ToListAsync();
             Fresh freshes = await _context.Freshes.FirstOrDefaultAsync();
+            List<Review> reviews = await _context.Reviews.Include(m => m.AppUser).ToListAsync();
+
 
             HomeVM model = new()
             {
@@ -40,7 +42,8 @@ namespace fruit_backend_project.Controllers
                 Features = features,
                 ServiceContents = serviceContents,
                 FactContents = factContents,
-                Freshes = freshes
+                Freshes = freshes,
+                Reviews = reviews,
             };
 
             return View(model);

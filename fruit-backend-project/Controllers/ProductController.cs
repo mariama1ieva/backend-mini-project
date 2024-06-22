@@ -26,6 +26,7 @@ namespace fruit_backend_project.Controllers
             List<Product> products = await _productService.GetAllAsync();
             List<Category> categories = await _categoryService.GetAllCategoriesWithProductCount();
 
+
             if (product == null)
             {
                 return NotFound();
